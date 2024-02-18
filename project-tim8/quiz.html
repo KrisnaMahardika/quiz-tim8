@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yak Quiz</title>
+    <link rel="stylesheet" href="style/quiz.css">
+</head>
+<body>
+    <header>
+        <nav class="navigasi">
+            <div class="navigasi_tittle">
+                <h3>YAK Quiz</h3>
+            </div>
+            <ul>
+                <li><a href="home.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                </a></li>
+                <li><a href="input.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-playlist-add" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 8h-14" /><path d="M5 12h9" /><path d="M11 16h-6" /><path d="M15 16h6" /><path d="M18 13v6" /></svg>
+            </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card" id="card_quiz">
+        <div class="card_header">
+            <img src="YAK-LOGO.svg" alt="logo">
+            <span>YAK Quiz</span>
+        </div>
+        <div class="card_body">
+            <div class="chat_kiri">
+                <p id="question"></p>
+                <p id="category"></p>
+            </div>
+            <div class="chat_kanan">
+                <p id="answer"></p>
+                <p id="difficulty"></p>
+            </div>
+        </div>
+        <div class="card_footer">
+            <p>Click to start 👉</p>
+            <button type="button" id="quiz_button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" /><path d="M6.5 12h14.5" /></svg>            
+            </button>
+        </div>
+    </div>
+    <script type="module" src="./script/quiz.js"></script>
+</body>
+</html>

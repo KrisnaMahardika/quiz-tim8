@@ -1,0 +1,250 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html,
+body{
+    height: 100vh;
+    min-height: 100vh;
+    gap: 16px;
+    background-color: #637D80;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    padding: 1.4rem 1rem;
+    background-color: #0000004c;
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1cm;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+.navigasi_tittle{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+li{
+    padding: 0rem 1.1rem;
+    float: left;
+}
+li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+ul li a{
+    position: relative;
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}ul li a::before{
+    transform: scale(0, 1);
+    transition: transform .3s ease;
+}
+ul li a:hover::before{
+    transform: scale(1, 1);
+}
+li a:hover{
+    color: white;
+    transition: all .3s ease-in-out;
+}
+.card {
+    margin-top: 1cm;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    max-height: 450px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.661);
+}
+.card_header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(63, 61, 61);
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.card_header img{
+    border-radius: 50%;
+}
+.card span{
+    margin-left: 8px;
+    font-size: 80%;
+    font-weight: bold;
+}
+.main_container{
+    display: flex;
+    margin-left: 7cm;
+    margin-right: 7cm;
+}
+.card .card_body .form-container .form-id {
+    display: none
+}
+
+.card_footer{
+    display: grid;
+    place-content: center;
+}
+.button_input {
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+.button_input:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.button_input_edit{
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+.button_input_edit:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#form_search{
+    margin-left: 11px;
+}
+
+.card_list{
+    margin-top: 1cm;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    max-height: 450px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.661);
+    overflow: hidden;
+}
+.card_list .card_body{
+    overflow-y: scroll;
+}
+.card_list .card_body .chat_kiri .quiz-item{
+    display: flex;
+}
+
+.card_list .card_body .chat_kiri .quiz-item #quiz-answer{
+    text-decoration: underline;
+}
+
+.chat_kanan p{
+    text-align: end;
+    width: fit-content;
+    margin: 4px 10px 0px 10px;
+    background-color: #86ff86; 
+    padding: 5px;
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 0px 0px 3px rgb(161, 161, 161);
+}
+.chat_kanan{
+    display: grid;
+    place-items: end;
+    margin-top: 10px;
+}
+.quiz-item{
+    width: fit-content;
+    margin: 4px 10px 0px 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 10px 10px 10px 0px;
+    box-shadow: 0px 0px 3px rgb(161, 161, 161);
+}
+
+.form-container {
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+#form-question, #form-answer, #form-category, #form-difficulty  {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-right: 2cm;
+    padding-left: 5px;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #deebeb;
+}
+
+.card_body {
+    height: 9cm;
+    margin: 10px;
+}
+
+.form-control {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:1024px) {
+    nav {
+        max-width: 98%;
+    }
+    .main_container{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card_list{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 85%;
+    }
+    header {
+        height: 100vh;
+    }
+    li {
+        padding: 1rem 1.1rem;
+    }
+}
